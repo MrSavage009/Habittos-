@@ -33,6 +33,16 @@ jobs:
           npm install @capacitor/core @capacitor/cli @capacitor/android
           npx cap init Habittos com.mrsavage009.habittos --web-dir=dist
           npx cap add android
+          
+          # Patch duplicate Kotlin library dependencies inside Gradle config
+          echo "configurations.all {
+              resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+                  if (details.requested.group == 'org.jetbrains.kotlin') {
+                      details.useVersion '1.8.22'
+                  }
+              }
+          }" >> android/build.gradle
+          
           npx cap sync
 
       - name: Set up Java Environment
