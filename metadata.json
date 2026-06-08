@@ -1,0 +1,6 @@
+{
+  "name": "Habittos",
+  "description": "A minimalist, privacy-first habit tracker with flexible scheduling and advanced habit strength analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
