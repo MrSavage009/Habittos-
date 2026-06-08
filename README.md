@@ -53,33 +53,6 @@ The application is built for mobile efficiency and operates entirely on-device.
 
 ---
 
-## Technical Overview
-
-### Prerequisites
-*   [Node.js](https://nodejs.org/) (v18 or higher recommended)
-*   [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
-
-### Getting Started
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/MrSavage009/Habittos-.git
-   cd Habittos-
-   ```
-
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
-
-3. **Run the local development server:**
-   ```bash
-   npm run dev
-   ```
-
-*(Adjust the build commands if your project uses a different framework or build system.)*
-
----
 
 ## How It Works
 
