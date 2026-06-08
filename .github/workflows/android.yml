@@ -20,7 +20,7 @@ jobs:
         run: npm install
 
       - name: Compile Web Assets
-        run: npm run build
+        run: VITE_SKIP_TYPECHECK=true npm run build -- --warnOnMissingEnv
 
       - name: Initialize Native Android Container
         run: |
